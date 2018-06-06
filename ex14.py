@@ -8,8 +8,10 @@ print(f"Do you like me {user_name}?")
 likes = input(prompt)
 print(f"Where do you live {user_name}?")
 lives = input(prompt)
+print("What kiind of computer do you have?")
+computer = input(prompt)
 print(f"""
         Alright, so yu said {likes} about liing me.
-        You live in {lives}.Not sure where that is.
+        You live in {lives} .Not sure where that is.
         And you have a {computer} computer. Nice.
-        """)
+    """)
