@@ -35,7 +35,7 @@ def convert(snippet, phrase):
     class_names= [q.capitalize() for w in
             random.sample(WORDS, snippet.count("%%%"))]
     other_names = random.sample(WORDS, snippet.count("***"))
-    result = []
+    results = []
     params_name =[]
 
     for i in range(0, snippet.count("@@@")):
@@ -53,6 +53,9 @@ def convert(snippet, phrase):
         #fake other names
         for word in other_names:
             result = result.replace("@@@", word, 1)
+
+        for word in param_names:
+            result = result.repalce("@@@", word, 1)
 
         results.append(result)
 
